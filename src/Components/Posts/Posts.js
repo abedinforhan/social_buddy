@@ -1,6 +1,4 @@
-
 import './Posts.css'
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -29,34 +27,30 @@ const useStyles = makeStyles({
 
 
 const Posts = (props) => {
-
+  //from material Ui
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+  const bull = <span className={classes.bullet}>•</span>; 
 
   const { userId, id, title } = props.Post;
-
-   
   return (
-  
-
-      <Card className={classes.root} variant="outlined">
-        <CardContent>
-          <Typography className={classes.title} color="textSecondary" gutterBottom>
-            UserId: {userId}
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          UserId: {userId}
         </Typography>
-          <Typography className='post__id' variant="h6" component="h6">
-           Id:{id}
+        <Typography className='post__id' variant="h6" component="h6">
+          Id:{id}
         </Typography>
         <Typography variant="body2" component="p">
-            {title}
-          
-          </Typography>
-        </CardContent>
-        <CardActions>
-         <Link to={`/postDetails/${id}`}> <Button size="small">See More</Button></Link>
-        </CardActions>
-      </Card>
-       );
+          {title}
+
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Link to={`/postDetails/${id}`}> <Button size="small">See More</Button></Link>
+      </CardActions>
+    </Card>
+  );
 };
 
 export default Posts;

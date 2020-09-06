@@ -1,0 +1,12 @@
+.comment__Container{
+  display: flex!important;
+  }
+  
+  .comment__body{
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .comment__img{
+    background-size:contain;
+  }

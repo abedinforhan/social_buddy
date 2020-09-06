@@ -180,7 +180,7 @@ export default function PrimarySearchAppBar() {
             
             
             
-            <Link to="/"><span className='postbook'>PostBOOk</span></Link>
+            <Link to="/"><span className='postbook'>Social Buddy</span></Link>
             
             
             
