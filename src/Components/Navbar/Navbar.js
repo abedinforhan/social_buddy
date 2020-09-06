@@ -15,7 +15,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -175,19 +175,16 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-           
+
           <Typography className={classes.title} variant="h6" noWrap>
-            
-            
-            
-            <Link to="/"><span className='postbook'>Social Buddy</span></Link>
-            
-            
-            
-            
+           <Link to="/">
+             <span className='nav__title'>
+               Social Buddy
+              </span>
+           </Link>
+
           </Typography>
-        
-          <div className={classes.search}>
+           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
